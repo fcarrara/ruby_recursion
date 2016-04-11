@@ -4,9 +4,9 @@ def merge_sort(list)
   if n > 0
     left = merge_sort(list[0..n-1])
     right = merge_sort(list[n..-1])
-    return merge(left,right)
+    merge(left,right)
   else
-    return list
+    list
   end
 end
 
@@ -25,7 +25,7 @@ def merge(left,right)
   result.concat left unless left.empty?
   result.concat right unless right.empty?
 
-  return result
+  result
    
 end
 
